@@ -1,7 +1,7 @@
 // Widescreens
 @include mediaXl {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -17,52 +17,44 @@
   main {
     align-items: center;
     text-align: center;
-
     .lg-heading {
+      text-align: center;
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
+      text-align: justify;
     }
   }
-
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
-
     &.show {
       transform: translate3d(0, 0, 0);
     }
   }
-
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    font-size: 1.3rem;
+    font-weight: 300;
   }
-
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
-
     .portrait {
-      background: url('../img/portrait_small.jpg');
-      width: 150px;
-      height: 150px;
+      background: url('../img/me.jpg');
+      width: 130px;
+      height: 130px;
+      background-size: cover;
+      background-position: bottom top;
     }
   }
-
   .about-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
-
+    grid-template-areas: 'bioimage' 'bio' 'head''job1' 'job2' 'job3';
     grid-template-columns: 1fr;
   }
-
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -73,8 +65,77 @@
   main#home h1 {
     margin-top: 10vh;
   }
-
+  main {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      text-align: center;
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
   .projects {
     grid-template-columns: 1fr;
   }
 }
+
+// Color For me
+// .sidenav {
+//   height: auto;
+//   width: 0;
+//   position: fixed;
+//   overflow: hidden;
+//   z-index: 1;
+//   top: 4vh;
+//   left: 0;
+//   @include easeOut;
+//   padding-top: 60px;
+// }
+// .cog-btn {
+//   background-color: #fff;
+//   font-size: 25px;
+//   color: #000;
+//   position: fixed;
+//   top: 2vh;
+//   justify-content: center;
+//   align-items: center;
+//   display: flex;
+//   z-index: 25;
+//   width: 50px;
+//   height: 50px;
+// }
+// @mixin ids {
+//   // padding: 8px 8px 8px 32px;
+//   z-index: 11;
+//   text-decoration: none;
+//   width: 50px;
+//   height: 50px;
+//   display: block;
+//   @include easeOut;
+// }
+// #a1 {
+//   @include ids;
+//   background-color: #fff;
+// }
+// #b2 {
+//   @include ids;
+//   background-color: #444;
+// }
+// #c3 {
+//   @include ids;
+//   background-color: #1e1e1e;
+// }
+// #d4 {
+//   @include ids;
+//   background-color: #ddd;
+// }
+// @media screen and (max-height: 450px) {
+//   .sidenav {
+//     padding-top: 15px;
+//   }
+//   .sidenav a {
+//     font-size: 18px;
+//   }
+// }
