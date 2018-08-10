@@ -47,7 +47,7 @@ header {
 
 main {
   padding: 4rem; // height: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100% - 60px);
   .icons {
     margin-top: 1rem;
     a {
@@ -64,9 +64,22 @@ main {
       margin-top: 20vh;
     }
   }
+} // About Page
+#about {
+  margin-top: 240px;
+  padding: 0 100px;
 }
 
-// About Page
+#work {
+  margin-top: 240px;
+  padding: 0 100px;
+}
+
+#contact {
+  margin-top: 240px;
+  padding: 0 100px;
+}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -126,9 +139,7 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
-}
-
-// Work/Projects
+} // Work/Projects
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -143,9 +154,7 @@ main {
       @include easeOut;
     }
   }
-}
-
-// Contact Page
+} // Contact Page
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -167,9 +176,7 @@ main {
       }
     }
   }
-}
-
-// Button Styles
+} // Button Styles
 .btn {
   display: block;
   padding: 0.5rem 1rem;
